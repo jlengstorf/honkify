@@ -2,6 +2,8 @@
 
 Need a little more chaos in your life? Set a goose loose on your site to act like a jerk.
 
+[Try a demo!](https://honkify.netlify.com)
+
 When activated, all links on the site will stop working, instead triggering a “honk!” sound effect.
 
 This is not transpiled and not tested on any browsers except Chrome latest, because this is a silly joke and therefore _honk honk honk!_
