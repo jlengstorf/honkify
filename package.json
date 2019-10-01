@@ -3,5 +3,10 @@
   "version": "0.0.2",
   "main": "index.js",
   "author": "Jason Lengstorf <jason@lengstorf.com> (https://lengstorf.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlengstorf/honkify"
+  },
+  "homepage": "https://honkify.netlify.com"
 }
