@@ -22,6 +22,10 @@ const honkify = (elementToHonkify = false) => {
     'input[type="button"]'
   ];
 
+  /**
+   * if the platform is iOS Safari, we quickly play, pause, reset the audio object
+   * this allows it to be playable the next time an user clicks a link
+   */
   if (iOSSafari) {
     console.log('Honk! This is safari');
     document.body.addEventListener('touchstart', () => {
