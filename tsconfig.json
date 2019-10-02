@@ -3,6 +3,6 @@
       "target": "es6",
       "module": "none",
       "declaration": true,
-      "strict": false
+      "strict": true
     }
   }

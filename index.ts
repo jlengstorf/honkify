@@ -5,13 +5,13 @@ const honkify = () => {
     return;
   }
 
-  const audio = new Audio(
+  const audio: HTMLAudioElement = new Audio(
     'https://res.cloudinary.com/jlengstorf/video/upload/q_auto/v1569957993/honk-sound.mp3',
   );
 
-  const links = document.querySelectorAll('a');
+  const links: NodeListOf<HTMLAnchorElement> = document.querySelectorAll('a');
 
-  const honk = event => {
+  const honk = (event: Event) => {
     event.preventDefault();
     event.stopImmediatePropagation();
 
@@ -20,12 +20,12 @@ const honkify = () => {
     return false;
   };
 
-  links.forEach(link => {
+  links.forEach((link: HTMLAnchorElement) => {
     link.addEventListener('click', honk);
   });
 
   const dehonk = () => {
-    links.forEach(link => {
+    links.forEach((link: HTMLAnchorElement) => {
       link.removeEventListener('click', honk);
     });
   };
