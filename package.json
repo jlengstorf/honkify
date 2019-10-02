@@ -4,9 +4,15 @@
   "main": "index.js",
   "author": "Jason Lengstorf <jason@lengstorf.com> (https://lengstorf.com)",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jlengstorf/honkify"
   },
-  "homepage": "https://honkify.netlify.com"
+  "homepage": "https://honkify.netlify.com",
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
 }
