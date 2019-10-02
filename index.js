@@ -1,4 +1,4 @@
-const honkify = (elementToHonkify = document) => {
+const honkify = (elementToHonkify = false) => {
   if (typeof window === 'undefined') {
     console.warn('honkify only works in the browser.');
     console.warn('I mean... honk!');
@@ -29,7 +29,7 @@ const honkify = (elementToHonkify = document) => {
     })
   }
 
-  const links = elementToHonkify.querySelectorAll('a');
+  const links = (elementToHonkify || document).querySelectorAll('a');
 
   const honk = event => {
     event.preventDefault();
