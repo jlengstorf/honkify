@@ -1,5 +1,4 @@
 const honkify = () => {
-
   if (typeof window === 'undefined') {
     console.warn('honkify only works in the browser.');
     console.warn('I mean... honk!');
