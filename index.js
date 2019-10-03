@@ -36,7 +36,7 @@ const honkify = (elementToHonkify = false) => {
   }
 
   const everythingClickable = Array.from(
-    document.querySelectorAll(defaultSelectors.join(','))
+    (elementToHonkify || document).querySelectorAll(defaultSelectors.join(','))
   ).filter(item => !item.classList.contains('no-honk'));
 
   const honk = event => {
