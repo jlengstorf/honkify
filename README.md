@@ -39,6 +39,29 @@ const unregister = honkify();
 unregister();
 ```
 
+## Hook
+
+You can also use the handy [React Hook](https://reactjs.org/docs/hooks-intro.html) (or React Honk?) to make any
+event handler honkable
+
+```js
+import useHonk from 'honkify/useHonk';
+
+function onClick = (isLoose) => {
+  console.log(`goose is ${isLoose ? 'loose' : 'STILL LOOSE'}`);
+}
+
+function App() {
+  const honkify = useHonk();
+  const onClickHonkified = honkify(onClick);
+  
+  return (
+    <h1 onClick={() => onClickHonkified(true)}>Sure, the header is honked too!</h1>
+  )
+}
+
+```
+
 ## Disclaimer: please don’t actually use this.
 
 Or, if you do, make sure it’s easy to toggle off. Geese may be jerks, but developers shouldn’t be.
