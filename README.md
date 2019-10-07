@@ -47,7 +47,7 @@ event handler honkable
 ```js
 import useHonk from 'honkify/useHonk';
 
-function onClick = (isLoose) => {
+const onClick = (isLoose) => {
   console.log(`goose is ${isLoose ? 'loose' : 'STILL LOOSE'}`);
 }
 
